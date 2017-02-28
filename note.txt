@@ -23,7 +23,17 @@ webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --pro
 webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --progress --display-modules
 webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --progress --display-modules --display-reasons
 
-上一次提交新建了一个项目webpack-demo
+webpack.config.js设置   https://webpack.js.org/configuration/
+
+在目录运行webpack的时候，会自动查找目录下的webpack.config.js里面的配置
+module.exports = {
+    entry: './src/script/main.js',      //入口文件
+    output: {
+        path: './dist/js',              //输入的文件夹
+        filename: 'bundle.js'           //输出的文件名
+    }
+};
+此为最简单的webpack.config.js设置
 
 
 
