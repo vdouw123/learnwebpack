@@ -158,10 +158,13 @@ module.exports = function() {
 
 __webpack_require__(1);
 __webpack_require__(0);
+//style.css需要经过css-loader的处理，才能打包
 
-function hello() {
-    alert("hello");
+function hello(str) {
+    alert(str);
 }
+
+hello('hello world!');
 
 
 /***/ })
