@@ -8,6 +8,11 @@ npm install webpack -g
 
 使用webpack打包hello.js到hello.bundle.js    webpack hello.js hello.bundle.js
 
+webpack天生不支持.css的文件，需要安装css-loader(style-loader)
+安装css-loader    npm install css-loader style-loader --save-dev
+
+
+
 
 
 
