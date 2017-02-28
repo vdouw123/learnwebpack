@@ -2,6 +2,13 @@
 npm初始化       npm init
 安装webpack     npm install webpack --save-dev
 
+首先你需要安装一个全局的webpack
+npm install webpack -g
+这样你才可以正确的使用webpack这个命令
+
+使用webpack打包hello.js到hello.bundle.js    webpack hello.js hello.bundle.js
+
+
 
 
 
