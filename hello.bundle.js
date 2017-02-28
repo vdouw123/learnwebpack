@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,8 +74,22 @@
  * Created by sf on 2017/2/28.
  */
 
-function hello(str) {
-    alert(str);
+function world() {
+    return {};
+}
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Created by sf on 2017/2/28.
+ */
+
+__webpack_require__(0);
+
+function hello() {
+    alert("hello");
 }
 
 
