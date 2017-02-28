@@ -11,9 +11,11 @@ npm install webpack -g
 webpack天生不支持.css的文件，需要安装css-loader(style-loader)
 安装css-loader    npm install css-loader style-loader --save-dev
 
-
-
-
+require('style-loader!css-loader!./style.css');
+改成
+require('./style.css');
+的话，需要如下的命令：
+webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader
 
 
 

@@ -3,7 +3,7 @@
  */
 
 require('./world.js');
-require('style-loader!css-loader!./style.css');
+require('./style.css');
 //style.css需要经过css-loader的处理，才能打包
 
 function hello(str) {
