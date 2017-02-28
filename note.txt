@@ -17,6 +17,13 @@ require('./style.css');
 的话，需要如下的命令：
 webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader
 
+打包时，通过以下的一些命令，可以看到我们需要的信息
+webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --watch
+webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --progress
+webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --progress --display-modules
+webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --progress --display-modules --display-reasons
+
+
 
 
 
