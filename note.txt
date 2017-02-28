@@ -23,6 +23,8 @@ webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --pro
 webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --progress --display-modules
 webpack hello.js hello.bundle.js --module-bind css=style-loader!css-loader --progress --display-modules --display-reasons
 
+上一次提交新建了一个项目webpack-demo
+
 
 
 
