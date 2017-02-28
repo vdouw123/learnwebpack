@@ -37,6 +37,9 @@ module.exports = {
 
 如果我们的配置文件改成webpack.dev.config.js，那个运行webpack命令是无法打包的，要运行（webpack --config webpack.dev.config.js）。
 
+将webpack参数添加到npm脚本
+在package.json中设置（"webpack": "webpack --config webpack.config.js --progress --colors --display-modules --display-reasons"）后，可以在命令行中执行（npm run webpack）直接运行
+
 
 
 
