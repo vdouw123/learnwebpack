@@ -35,7 +35,7 @@ module.exports = {
 };
 此为最简单的webpack.config.js设置
 
-
+如果我们的配置文件改成webpack.dev.config.js，那个运行webpack命令是无法打包的，要运行（webpack --config webpack.dev.config.js）。
 
 
 
