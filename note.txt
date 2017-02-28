@@ -1,0 +1,9 @@
+新建文件夹       mkdir webpack-test
+npm初始化       npm init
+安装webpack     npm install webpack --save-dev
+
+
+
+
+
+
