@@ -13,19 +13,19 @@
 <body>
 <%= htmlWebpackPlugin.options.date %>
 
-<p>遍历对象htmlWebpackPlugin</p>
+<p><b>遍历对象htmlWebpackPlugin</b></p>
 <% for (var key in htmlWebpackPlugin){ %>
 <%= key %>
 <% } %>
 
 <p>遍历对象htmlWebpackPlugin.options</p>
 <% for (var key in htmlWebpackPlugin.options){ %>
-<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.options[key]) %>
+<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.options[key]) %><br>
 <% } %>
 
 <p>遍历对象htmlWebpackPlugin.files</p>
 <% for (var key in htmlWebpackPlugin.files){ %>
-<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key]) %>
+<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key]) %><br>
 <% } %>
 
 
