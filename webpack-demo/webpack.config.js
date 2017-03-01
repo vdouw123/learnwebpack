@@ -52,7 +52,8 @@ module.exports = {
         new htmlWebpackPlugin({
             filename: 'index.html',     //输出filename
             template: 'index.html',     //关联模板
-            inject: 'head',             //放在head或body中
+            //inject: 'head',             //放在head或body中
+            inject: false,
             title: 'this is Title',
             date: new Date()
         })

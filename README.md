@@ -79,6 +79,9 @@ webpack.config.js中设置new htmlWebpackPlugin({template: 'index.html'})即可
 
 htmlWebpackPlugin中设置变量，在模板index.html中使用<%= htmlWebpackPlugin.options.变量名 %>，然后在打包好的index.html中读取出来。
 
+取消打包后自动插入：inject: false,
+页面中直接引入：<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
 
 
 
