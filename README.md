@@ -77,6 +77,8 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 
 webpack.config.js中设置new htmlWebpackPlugin({template: 'index.html'})即可
 
+htmlWebpackPlugin中设置变量，在模板index.html中使用<%= htmlWebpackPlugin.options.变量名 %>，然后在打包好的index.html中读取出来。
+
 
 
 

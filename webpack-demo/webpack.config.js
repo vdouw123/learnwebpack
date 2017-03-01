@@ -50,9 +50,10 @@ module.exports = {
     },
     plugins: [
         new htmlWebpackPlugin({
-            filename: 'index-[hash].html',
-            template: 'index.html',
-            inject: 'head'          //放在head或body中
+            filename: 'index.html',     //输出filename
+            template: 'index.html',     //关联模板
+            inject: 'head',             //放在head或body中
+            title: 'this is Title'
         })
     ]
 };
