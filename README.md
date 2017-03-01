@@ -1,4 +1,4 @@
-# 张三丰学webpack
+# 学学webpack
 follow imooc to learn webpack
 
 视频教程地址：
@@ -74,7 +74,10 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 可以看出，dist/js/文件夹中，多了一个正常引入chunkhash文件的index.html
 
 那么问题来了，项目下的index.html和dist/js/index.html，其实并没有任何联系
+
 webpack.config.js中设置new htmlWebpackPlugin({template: 'index.html'})即可
+
+
 
 
 
