@@ -62,6 +62,9 @@ entry为对象，一般是处理多页面的打包
 output的filename: '[name]-[chunkhash].js'时，多次打包，只有修改的文件，chunkhash有改变。
 所以，可以将chunkhash理解为这个文件的版本号。
 
+index.html动态调用含有chunkhash名的文件，需要安装html-webpack-plugin
+（npm install html-webpack-plugin --save-dev）
+
 
 
 
