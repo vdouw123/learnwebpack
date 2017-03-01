@@ -50,10 +50,12 @@ module.exports = {
 将webpack参数添加到npm脚本
 
 在package.json中设置
-
 （"webpack": "webpack --config webpack.config.js --progress --colors --display-modules --display-reasons"）
-
 后，可以在命令行中执行（npm run webpack）直接运行
+
+
+entry: ['./src/script/main.js', './src/script/main2.js'],
+如果entry是数组，是将两个平行的、不相依赖的文件，打包在一起
 
 
 
