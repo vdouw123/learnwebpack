@@ -2,8 +2,8 @@
  * Created by sf on 2017/2/28.
  */
 
-function helloworld() {
-    console.log("hello world");
+function helloworld(str) {
+    console.log(str);
 }
 
-helloworld();
+helloworld("hello world");
