@@ -53,7 +53,8 @@ module.exports = {
             filename: 'index.html',     //输出filename
             template: 'index.html',     //关联模板
             inject: 'head',             //放在head或body中
-            title: 'this is Title'
+            title: 'this is Title',
+            date: new Date()
         })
     ]
 };
