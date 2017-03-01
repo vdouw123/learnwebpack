@@ -12,19 +12,32 @@
 // };
 
 
+// module.exports = {
+//     //entry为对象，一般是处理多页面的打包
+//     entry: {
+//         main: './src/script/main.js',
+//         main2: './src/script/main2.js'
+//     },
+//     output: {
+//         path: './dist/js',
+//         filename: '[name].js'
+//         //因为要生成多少文件，所以filename就不能是一个写死的名字
+//     }
+// };
+// //执行npm run webpack后，可以看出dist里面多了main.js和main2.js
+
+
 module.exports = {
-    //entry为对象，一般是处理多页面的打包
     entry: {
         main: './src/script/main.js',
         main2: './src/script/main2.js'
     },
     output: {
         path: './dist/js',
-        filename: '[name].js'
-        //因为要生成多少文件，所以filename就不能是一个写死的名字
+        filename: '[name]-[hash].js'
     }
 };
-//执行npm run webpack后，可以看出dist里面多了main.js和main2.js
+
 
 
 
