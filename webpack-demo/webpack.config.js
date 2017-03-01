@@ -46,7 +46,8 @@ module.exports = {
     },
     output: {
         path: './dist',
-        filename: 'js/[name]-[chunkhash].js'
+        filename: 'js/[name]-[chunkhash].js',
+        publicPath: 'http://127.0.0.11/webpack-demo/dist/'
     },
     plugins: [
         new htmlWebpackPlugin({
