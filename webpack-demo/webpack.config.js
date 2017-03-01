@@ -38,7 +38,7 @@
 //     }
 // };
 
-
+var htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         main: './src/script/main.js',
@@ -47,9 +47,12 @@ module.exports = {
     output: {
         path: './dist/js',
         filename: '[name]-[chunkhash].js'
-    }
+    },
+    plugins: [
+        new htmlWebpackPlugin()
+    ]
 };
-//可以将chunkhash理解为这个文件的版本号
+
 
 
 

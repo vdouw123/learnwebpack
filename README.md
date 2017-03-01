@@ -65,6 +65,14 @@ output的filename: '[name]-[chunkhash].js'时，多次打包，只有修改的�
 index.html动态调用含有chunkhash名的文件，需要安装html-webpack-plugin
 （npm install html-webpack-plugin --save-dev）
 
+webpack.config.js中，如何设置html-webpack-plugins，请查看官方文档：
+https://webpack.js.org/concepts/plugins/
+
+webpack.config.js先引入html-webpack-plugin
+var htmlWebpackPlugin = require('html-webpack-plugin');
+然后设置plugins: [new htmlWebpackPlugin()]
+可以看出，dist/js/文件夹中，多了一个正常引入chunkhash文件的index.html
+
 
 
 
