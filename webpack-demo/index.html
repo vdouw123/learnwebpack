@@ -12,5 +12,24 @@
 </head>
 <body>
 <%= htmlWebpackPlugin.options.date %>
+
+<p>遍历对象htmlWebpackPlugin</p>
+<% for (var key in htmlWebpackPlugin){ %>
+<%= key %>
+<% } %>
+
+<p>遍历对象htmlWebpackPlugin.options</p>
+<% for (var key in htmlWebpackPlugin.options){ %>
+<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.options[key]) %>
+<% } %>
+
+<p>遍历对象htmlWebpackPlugin.files</p>
+<% for (var key in htmlWebpackPlugin.files){ %>
+<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key]) %>
+<% } %>
+
+
+
+
 </body>
 </html>
