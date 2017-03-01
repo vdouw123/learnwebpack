@@ -27,6 +27,18 @@
 // //执行npm run webpack后，可以看出dist里面多了main.js和main2.js
 
 
+// module.exports = {
+//     entry: {
+//         main: './src/script/main.js',
+//         main2: './src/script/main2.js'
+//     },
+//     output: {
+//         path: './dist/js',
+//         filename: '[name]-[hash].js'
+//     }
+// };
+
+
 module.exports = {
     entry: {
         main: './src/script/main.js',
@@ -34,9 +46,10 @@ module.exports = {
     },
     output: {
         path: './dist/js',
-        filename: '[name]-[hash].js'
+        filename: '[name]-[chunkhash].js'
     }
 };
+//可以将chunkhash理解为这个文件的版本号
 
 
 
