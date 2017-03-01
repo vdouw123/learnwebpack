@@ -73,6 +73,10 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 然后设置plugins: [new htmlWebpackPlugin()]
 可以看出，dist/js/文件夹中，多了一个正常引入chunkhash文件的index.html
 
+那么问题来了，项目下的index.html和dist/js/index.html，其实并没有任何联系
+
+
+
 
 
 

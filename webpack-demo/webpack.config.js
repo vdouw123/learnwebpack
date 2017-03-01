@@ -45,11 +45,15 @@ module.exports = {
         main2: './src/script/main2.js'
     },
     output: {
-        path: './dist/js',
-        filename: '[name]-[chunkhash].js'
+        path: './dist',
+        filename: 'js/[name]-[chunkhash].js'
     },
     plugins: [
-        new htmlWebpackPlugin()
+        new htmlWebpackPlugin({
+            filename: 'index-[hash].html',
+            template: 'index.html',
+            inject: 'head'          //放在head或body中
+        })
     ]
 };
 
