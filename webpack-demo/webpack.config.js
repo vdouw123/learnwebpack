@@ -47,7 +47,7 @@ module.exports = {
     output: {
         path: './dist',
         filename: 'js/[name]-[chunkhash].js',
-        publicPath: 'http://127.0.0.11/webpack-demo/dist/'
+        //publicPath: 'http://127.0.0.11/webpack-demo/dist/',    //打包后生成的引入加上绝对路径
     },
     plugins: [
         new htmlWebpackPlugin({
@@ -56,7 +56,12 @@ module.exports = {
             //inject: 'head',             //放在head或body中
             inject: false,
             title: 'this is Title',
-            date: new Date()
+            date: new Date(),
+            minify: {
+                removeComments: true,   //删除注释
+                collapseWhitespace: true,  //删除空格
+                //https://github.com/kangax/html-minifier#options-quick-reference
+            }
         })
     ]
 };
