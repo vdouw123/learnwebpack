@@ -57,6 +57,8 @@ module.exports = {
 entry: ['./src/script/main.js', './src/script/main2.js'],
 如果entry是数组，是将两个平行的、不相依赖的文件，打包在一起
 
+entry为对象，一般是处理多页面的打包
+
 
 
 
