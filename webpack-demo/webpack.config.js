@@ -68,7 +68,6 @@ module.exports = {
             //     collapseWhitespace: true,  //删除空格
             //     //https://github.com/kangax/html-minifier#options-quick-reference
             // }
-
         }),
         new htmlWebpackPlugin({
             filename: 'index2.html',
