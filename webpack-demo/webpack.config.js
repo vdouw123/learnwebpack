@@ -62,6 +62,7 @@ module.exports = {
             inject: 'head',                     //放在head或body中
             //inject: false,
             title: 'this is page 1',
+            chunks:["main","main2"]
             // date: new Date(),
             // minify: {
             //     removeComments: true,   //删除注释
@@ -74,12 +75,14 @@ module.exports = {
             template: 'morepagetemp.html',
             inject: 'head',
             title: 'this is page 2',
+            chunks:["main2"]
         }),
         new htmlWebpackPlugin({
             filename: 'index3.html',
             template: 'morepagetemp.html',
             inject: 'head',
-            title: 'this is page 3'
+            title: 'this is page 3',
+            chunks:["main3"]
         })
     ]
 };
