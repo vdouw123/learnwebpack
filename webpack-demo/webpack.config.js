@@ -40,9 +40,15 @@
 
 var htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
+    // entry: [
+    //     './src/script/main.js',
+    //     './src/script/main2.js',
+    //     './src/script/main3.js'
+    // ],
     entry: {
         main: './src/script/main.js',
-        main2: './src/script/main2.js'
+        main2: './src/script/main2.js',
+        main3: './src/script/main3.js'
     },
     output: {
         path: './dist',
@@ -51,17 +57,30 @@ module.exports = {
     },
     plugins: [
         new htmlWebpackPlugin({
-            filename: 'index.html',     //输出filename
-            template: 'index.html',     //关联模板
-            //inject: 'head',             //放在head或body中
-            inject: false,
-            title: 'this is Title',
-            date: new Date(),
-            minify: {
-                removeComments: true,   //删除注释
-                collapseWhitespace: true,  //删除空格
-                //https://github.com/kangax/html-minifier#options-quick-reference
-            }
+            filename: 'index.html',             //输出filename
+            template: 'morepagetemp.html',      //关联模板
+            inject: 'head',                     //放在head或body中
+            //inject: false,
+            title: 'this is page 1',
+            // date: new Date(),
+            // minify: {
+            //     removeComments: true,   //删除注释
+            //     collapseWhitespace: true,  //删除空格
+            //     //https://github.com/kangax/html-minifier#options-quick-reference
+            // }
+
+        }),
+        new htmlWebpackPlugin({
+            filename: 'index2.html',
+            template: 'morepagetemp.html',
+            inject: 'head',
+            title: 'this is page 2',
+        }),
+        new htmlWebpackPlugin({
+            filename: 'index3.html',
+            template: 'morepagetemp.html',
+            inject: 'head',
+            title: 'this is page 3'
         })
     ]
 };

@@ -84,7 +84,10 @@ htmlWebpackPlugin中设置变量，在模板index.html中使用<%= htmlWebpackPl
 
 打包后生成的引入加上绝对路径：publicPath: 'http://127.0.0.11/webpack-demo/dist/'
 
-minify参数查阅官方地址：https://github.com/kangax/html-minifier#options-quick-reference
+minify参数查阅官方地址：https://github.com/kangax/html-minifier
+
+处理多页面
+
 
 
 
