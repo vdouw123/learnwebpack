@@ -57,7 +57,7 @@ module.exports = {
     },
     plugins: [
         new htmlWebpackPlugin({
-            filename: 'index-excludeChinks.html',             //输出filename
+            filename: 'index-excludeChunks.html',             //输出filename
             template: 'morepagetemp.html',      //关联模板
             inject: 'head',                     //放在head或body中
             //inject: false,
@@ -72,14 +72,14 @@ module.exports = {
             // }
         }),
         new htmlWebpackPlugin({
-            filename: 'index2-excludeChinks.html',
+            filename: 'index2-excludeChunks.html',
             template: 'morepagetemp.html',
             inject: 'head',
             title: 'this is page 2',
             chunks:["main2"]
         }),
         new htmlWebpackPlugin({
-            filename: 'index3-excludeChinks.html',
+            filename: 'index3-excludeChunks.html',
             template: 'morepagetemp.html',
             inject: 'head',
             title: 'this is page 3',
