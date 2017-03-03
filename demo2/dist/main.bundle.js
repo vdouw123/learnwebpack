@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,6 +73,18 @@
 /**
  * Created by sf on 2017/3/3.
  */
+
+console.log("main2");
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Created by sf on 2017/3/3.
+ */
+
+__webpack_require__(0);
 
 console.log("main");
 
