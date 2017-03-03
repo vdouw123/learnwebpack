@@ -27,9 +27,9 @@ module.exports = {
             inject: 'head',             //head中插入打包的js
         }),
         new htmlWebpackPlugin({
-            template: 'index2.html',     //页面输入的模板
-            filename: 'index2.html',     //输出的文件名
-            inject: 'head',             //head中插入打包的js
+            template: 'index2.html',
+            filename: 'index2.html',
+            inject: 'head'
         })
     ]
 };
