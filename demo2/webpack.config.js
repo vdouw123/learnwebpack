@@ -17,7 +17,8 @@ module.exports = {
     },
     output: {
         path: './dist',
-        filename: '[name].js'
+        //filename: '[name].js'
+        filename: '[name]-[hash].js'
     },
     plugins: [
         new htmlWebpackPlugin({
