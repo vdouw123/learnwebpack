@@ -5,7 +5,8 @@
 var htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/script/main.js',      //打包的输入文件
+    //entry: './src/script/main.js',      //打包的输入文件
+    entry: ['./src/script/main.js', './src/script/main2.js'],
     output: {
         path: './dist',                  //要输出的目录
         filename: 'main.bundle.js'       //要输出的名称
