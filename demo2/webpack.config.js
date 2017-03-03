@@ -47,11 +47,12 @@ module.exports = {
         new htmlWebpackPlugin({
             template: 'indexx.html',
             filename: 'index.html',
+            date: new Date(),
             //inject: 'head'
             inject: false
         }),
         new htmlWebpackPlugin({
-            template: 'index2.html',
+            template: 'indexx2.html',
             filename: 'index2.html',
             inject: false
         })
