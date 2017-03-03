@@ -87,7 +87,35 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 //     ]
 // };
 
-//不同的页面，加载不同的JS（3：entry的排除加载法）
+// //不同的页面，加载不同的JS（3：entry的排除加载法）
+// module.exports = {
+//     entry: {
+//         main: './src/script/main.js',
+//         main2: './src/script/main2.js',
+//         main3: './src/script/main3.js'
+//     },
+//     output: {
+//         path: './dist',
+//         filename: '[chunkhash].js'
+//     },
+//     plugins: [
+//         new htmlWebpackPlugin({
+//             template: 'indexxx.html',
+//             filename: 'index.html',
+//             date: new Date(),
+//             inject: 'head',
+//             excludeChunks: ['main']     //不加载main
+//         }),
+//         new htmlWebpackPlugin({
+//             template: 'indexxx.html',
+//             filename: 'index2.html',
+//             inject: 'head',
+//             excludeChunks: ['main2']    //不加载main2
+//         })
+//     ]
+// };
+
+//页面压缩minify
 module.exports = {
     entry: {
         main: './src/script/main.js',
@@ -104,13 +132,23 @@ module.exports = {
             filename: 'index.html',
             date: new Date(),
             inject: 'head',
-            excludeChunks: ['main']     //不加载main
+            excludeChunks: ['main'],     //不加载main
+            minify: {
+                removeComments: true,   //删除注释
+                collapseWhitespace: true  //删除空格
+            }
         }),
         new htmlWebpackPlugin({
             template: 'indexxx.html',
             filename: 'index2.html',
             inject: 'head',
-            excludeChunks: ['main2']    //不加载main2
+            excludeChunks: ['main2'],    //不加载main2
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
         })
     ]
 };
+
+
