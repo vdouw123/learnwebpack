@@ -34,6 +34,33 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 //     ]
 // };
 
+//不同的页面，加载不同的JS（1）
+// module.exports = {
+//     entry: {
+//         main: './src/script/main.js',
+//         main2: './src/script/main2.js'
+//     },
+//     output: {
+//         path: './dist',
+//         filename: '[chunkhash].js'
+//     },
+//     plugins: [
+//         new htmlWebpackPlugin({
+//             template: 'indexx.html',
+//             filename: 'index.html',
+//             date: new Date(),
+//             //inject: 'head'
+//             inject: false
+//         }),
+//         new htmlWebpackPlugin({
+//             template: 'indexx2.html',
+//             filename: 'index2.html',
+//             inject: false
+//         })
+//     ]
+// };
+
+不同的页面，加载不同的JS（2）
 module.exports = {
     entry: {
         main: './src/script/main.js',
@@ -48,13 +75,14 @@ module.exports = {
             template: 'indexx.html',
             filename: 'index.html',
             date: new Date(),
-            //inject: 'head'
-            inject: false
+            inject: 'head',
+            chunks:['main']
         }),
         new htmlWebpackPlugin({
             template: 'indexx2.html',
             filename: 'index2.html',
-            inject: false
+            inject: 'head',
+            chunks:['main2']
         })
     ]
 };
