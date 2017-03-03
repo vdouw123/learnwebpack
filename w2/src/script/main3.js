@@ -5,4 +5,4 @@
 function main3() {
     console.log("main3");
 }
-main2();
+main3();
