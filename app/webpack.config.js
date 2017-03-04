@@ -2,6 +2,8 @@
  * Created by sf on 2017/3/3.
  */
 
+var htmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     entry: './src/app.js',
     output: {
@@ -12,7 +14,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                loder: 'babel',
+                loader: 'babel-loader'
                 // query: {
                 //     presets: ['latest']
                 // }
