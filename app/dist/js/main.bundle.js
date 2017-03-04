@@ -68,10 +68,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
+/***/ (function(module, exports) {
 
 /**
  * Created by sf on 2017/3/3.
@@ -79,11 +76,11 @@
 
 // import layar from './components/layer/layer';
 
-var App = function App() {
-    var Num = 1;
+const App = function () {
+    const Num = 1;
     alert(Num);
     console.log('app.js');
-};
+}
 
 new App();
 

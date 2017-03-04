@@ -14,10 +14,12 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                loader: 'babel-loader'
-                // query: {
-                //     presets: ['latest']
-                // }
+                loader: 'babel-loader',
+                exclude: './node_modules/',     //优化打包速度之排出的文件夹
+                include:'./src/',               //优化打包速度之引用的文件夹
+                query: {
+                    presets: ['latest']
+                }
             }
         ]
     },
