@@ -3,6 +3,7 @@
  */
 
 var htmlWebpackPlugin = require('html-webpack-plugin');
+var path = require('path');
 
 module.exports = {
     entry: './src/app.js',
@@ -15,8 +16,9 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                exclude: './node_modules/',     //优化打包速度之排出的文件夹
-                include:'./src/',               //优化打包速度之引用的文件夹
+                //exclude: './node_modules/',     //优化打包速度之排出的文件夹
+                //include:'./src/',               //优化打包速度之引用的文件夹
+                exclude: path.resolve(__dirname, 'node_modules'),       //绝对路径
                 query: {
                     presets: ['latest']
                 }
