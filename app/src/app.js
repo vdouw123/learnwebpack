@@ -3,6 +3,7 @@
  */
 
 import layar from './components/layer/layer.js';
+import './style/common.css';
 
 const App = function () {
     console.log('app.js');
