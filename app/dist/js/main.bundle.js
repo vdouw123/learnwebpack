@@ -63,24 +63,51 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 /**
- * Created by sf on 2017/3/3.
+ * Created by sf on 2017/3/4.
  */
 
-// import layar from './components/layer/layer';
+// import tpl from './layer.html';
 
-const App = function () {
-    const Num = 1;
-    alert(Num);
-    console.log('app.js');
-}
+// function layer() {
+//     return {
+//         name: 'layer',
+//         tpl: tpl
+//     }
+// }
+//
+// export default layer;
+
+console.log("layer.js");
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _layer = __webpack_require__(0);
+
+var _layer2 = _interopRequireDefault(_layer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var App = function App() {
+  console.log('app.js');
+}; /**
+    * Created by sf on 2017/3/3.
+    */
 
 new App();
 

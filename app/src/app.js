@@ -2,11 +2,9 @@
  * Created by sf on 2017/3/3.
  */
 
-// import layar from './components/layer/layer';
+import layar from './components/layer/layer.js';
 
 const App = function () {
-    const Num = 1;
-    alert(Num);
     console.log('app.js');
 }
 
