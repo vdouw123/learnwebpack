@@ -97,6 +97,8 @@ http://babeljs.io/docs/setup/
 http://babeljs.io/docs/plugins/
 （npm install --save-dev babel-cli babel-preset-latest）
 
+babel的作用是将es6转换成es5
+
 
 
 
