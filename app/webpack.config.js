@@ -18,6 +18,7 @@ module.exports = {
                 loader: 'babel-loader',
                 //exclude: './node_modules/',     //优化打包速度之排出的文件夹
                 //include:'./src/',               //优化打包速度之引用的文件夹
+                include: path.resolve(__dirname, 'src'),
                 exclude: path.resolve(__dirname, 'node_modules'),       //绝对路径
                 query: {
                     presets: ['latest']
