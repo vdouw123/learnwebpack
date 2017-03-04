@@ -13,9 +13,9 @@ module.exports = {
             {
                 test: /\.js$/,
                 loder: 'babel',
-                query: {
-                    presets: ['lastest']
-                }
+                // query: {
+                //     presets: ['lastest']
+                // }
             }
         ]
     },
