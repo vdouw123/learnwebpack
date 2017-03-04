@@ -80,7 +80,9 @@
 // import layar from './components/layer/layer';
 
 var App = function App() {
-  console.log('app.js');
+    var Num = 1;
+    alert(Num);
+    console.log('app.js');
 };
 
 new App();

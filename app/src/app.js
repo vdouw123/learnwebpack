@@ -5,6 +5,8 @@
 // import layar from './components/layer/layer';
 
 const App = function () {
+    const Num = 1;
+    alert(Num);
     console.log('app.js');
 }
 
