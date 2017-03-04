@@ -89,6 +89,9 @@ minify参数查阅官方地址：https://github.com/kangax/html-minifier
 处理多页面的时候可以看出，如果entry为数组，多个JS打包成一个；
 如果entry为对象，JS单独打包，单独引用。
 
+安装babel-loader，具体参见官网：
+http://babeljs.io/docs/setup/
+
 
 
 
