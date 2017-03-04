@@ -92,6 +92,9 @@ minify参数查阅官方地址：https://github.com/kangax/html-minifier
 安装babel-loader，具体参见官网：
 http://babeljs.io/docs/setup/
 
+安装babel-loader的插件presets，具体看官网：
+http://babeljs.io/docs/plugins/
+
 
 
 

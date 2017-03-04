@@ -11,7 +11,11 @@ module.exports = {
     module: {
         loaders: [
             {
-                //test:
+                test: /\.js$/,
+                loder: 'babel',
+                query: {
+                    presets: ['lastest']
+                }
             }
         ]
     },
