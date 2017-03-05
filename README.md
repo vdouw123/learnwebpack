@@ -131,7 +131,7 @@ https://github.com/webpack-contrib/html-loader
 
 相对路径的写法 ${ require('../../assets/5.jpg') }
 
-
+设置打包后图片的路径和名字：query: {name: 'assets/[name]-[hash:5].[ext]'}
 
 
 
