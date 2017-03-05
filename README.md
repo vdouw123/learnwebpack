@@ -126,6 +126,11 @@ https://github.com/webpack-contrib/html-loader
 
 通过ejs-loader，layer.tpl不再是一个字符串，app.js中的layer.tpl便是一个函数，可以传入参数。
 
+安装file-loader
+（npm install file-loader --save-dev）
+
+
+
 
 
 
