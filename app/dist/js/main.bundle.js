@@ -125,7 +125,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, "html, body {\r\n    background: rgba(0, 0, 0, 0.1);\r\n}\r\n", ""]);
+exports.push([module.i, "html, body {\r\n    background: rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.flex-div {\r\n    display: flex;\r\n}", ""]);
 
 // exports
 

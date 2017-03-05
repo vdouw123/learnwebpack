@@ -99,6 +99,12 @@ http://babeljs.io/docs/plugins/
 
 babel的作用是将es6转换成es5
 
+安装postcss-loader
+（npm install postcss-loader --save-dve）
+
+npm install autoprefixer --save-dev
+
+
 
 
 
