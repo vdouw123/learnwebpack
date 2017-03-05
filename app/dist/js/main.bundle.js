@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -385,7 +385,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-__webpack_require__(9);
+__webpack_require__(10);
 
 var _layer = __webpack_require__(7);
 
@@ -437,7 +437,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ".layer {\n  width: 400px;\n  height: 400px;\n  background: url(" + __webpack_require__(8) + ") no-repeat;\n  background-size: 600px 600px;\n  padding: 100px;\n}\n.layer div {\n  width: 400px;\n  height: 400px;\n  position: relative;\n}\n.layer div img {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 400px;\n  height: 400px;\n}\n.layer .flex {\n  display: flex;\n}\n", ""]);
+exports.push([module.i, ".layer {\n  width: 400px;\n  height: 400px;\n  background: url(" + __webpack_require__(9) + ") no-repeat;\n  background-size: 600px 600px;\n  padding: 100px;\n}\n.layer div {\n  width: 400px;\n  height: 400px;\n  position: relative;\n}\n.layer div img {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 400px;\n  height: 400px;\n}\n.layer .flex {\n  display: flex;\n}\n", ""]);
 
 // exports
 
@@ -451,7 +451,7 @@ exports = module.exports = __webpack_require__(0)();
 exports.i(__webpack_require__(6), "");
 
 // module
-exports.push([module.i, "html, body {\r\n    background: rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n", ""]);
+exports.push([module.i, "html, body {\r\n    background: rgba(0, 0, 0, 0.1);\r\n    width: 100%;\r\n    height: 100%;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -472,18 +472,22 @@ exports.push([module.i, ".flex-div {\r\n    display: flex;\r\n}", ""]);
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function (obj) {
 obj || (obj = {});
 var __t, __p = '', __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 with (obj) {
-__p += '<div class="layer">\r\n    <div>this is ' +
+__p += '<div class="layer">\r\n    <div>\r\n        <span>this is ' +
 ((__t = ( name )) == null ? '' : __t) +
-' layer<img src="../../assets/5.jpg" /></div>\r\n    ';
- for (var i=0; i<arr.length; i++) { ;
-__p += '\r\n        ' +
+' layer</span>\r\n        <img src="' +
+((__t = ( __webpack_require__(8) )) == null ? '' : __t) +
+'"/>\r\n    </div>\r\n    ';
+ for (var i=0; i
+    <arr.length
+    ; i++) { ;
+__p += '\r\n    ' +
 ((__t = ( arr[i] )) == null ? '' : __t) +
 '\r\n    ';
  } ;
@@ -497,10 +501,16 @@ return __p
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "94b38e1a78b484e27597c704487e0cc2.jpg";
+module.exports = __webpack_require__.p + "d1642dcab01be552eae84ad77d6e0a8b.jpg";
 
 /***/ }),
 /* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "94b38e1a78b484e27597c704487e0cc2.jpg";
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -526,7 +536,7 @@ if(false) {
 }
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
