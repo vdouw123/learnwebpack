@@ -44,6 +44,10 @@ module.exports = {
                 test: /\.html$/,
                 loader: 'html-loader'
             },
+            {
+                test: /\.tpl$/,
+                loader: 'ejs-loader'
+            }
         ]
     },
 

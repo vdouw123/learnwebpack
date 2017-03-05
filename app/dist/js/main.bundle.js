@@ -474,7 +474,24 @@ exports.push([module.i, ".flex-div {\r\n    display: flex;\r\n}", ""]);
 /* 7 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"layer\">\r\n    <div>this is layer</div>\r\n</div>";
+module.exports = function (obj) {
+obj || (obj = {});
+var __t, __p = '', __j = Array.prototype.join;
+function print() { __p += __j.call(arguments, '') }
+with (obj) {
+__p += '<div class="layer">\r\n    <div>this is ' +
+((__t = ( name )) == null ? '' : __t) +
+' layer</div>\r\n    ';
+ for (var i=0; i<arr.length; i++) { ;
+__p += '\r\n        ' +
+((__t = ( arr[i] )) == null ? '' : __t) +
+'\r\n    ';
+ } ;
+__p += '\r\n</div>';
+
+}
+return __p
+}
 
 /***/ }),
 /* 8 */
@@ -520,7 +537,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var App = function App() {
     var dom = document.getElementById("app");
     var layer = new _layer2.default();
-    dom.innerHTML = layer.tpl;
+    dom.innerHTML = layer.tpl({
+        name: 'john',
+        arr: ['apple', 'xiaomi', 'oppo']
+    });
 };
 
 new App();

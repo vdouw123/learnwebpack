@@ -121,6 +121,11 @@ html loader module for webpack
 http://webpack.github.io/docs/list-of-loaders.html#templating
 https://github.com/webpack-contrib/html-loader
 
+安装ejs-loader
+（npm install ejs-loader --save-dev）
+
+通过ejs-loader，layer.tpl不再是一个字符串，app.js中的layer.tpl便是一个函数，可以传入参数。
+
 
 
 
