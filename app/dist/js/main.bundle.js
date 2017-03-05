@@ -436,7 +436,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ".layer {\n  width: 600px;\n  height: 200px;\n  background: #ccc;\n}\n.layer div {\n  width: 400px;\n  height: 100px;\n  background-color: red;\n}\n", ""]);
+exports.push([module.i, ".layer {\n  width: 600px;\n  height: 200px;\n  background: #ccc;\n}\n.layer div {\n  width: 400px;\n  height: 100px;\n  background-color: red;\n}\n.layer .flex {\n  display: flex;\n}\n", ""]);
 
 // exports
 

@@ -111,6 +111,8 @@ babel的作用是将es6转换成es5
 安装less
 （npm install less --save-dev）
 
+安装sass
+（npm install sass-loader --save-dev）
 
 
 
