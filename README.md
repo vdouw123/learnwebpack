@@ -129,7 +129,7 @@ https://github.com/webpack-contrib/html-loader
 安装file-loader
 （npm install file-loader --save-dev）
 
-
+相对路径的写法 ${ require('../../assets/5.jpg') }
 
 
 

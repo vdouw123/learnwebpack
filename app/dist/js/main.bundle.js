@@ -501,13 +501,13 @@ return __p
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "d1642dcab01be552eae84ad77d6e0a8b.jpg";
+module.exports = __webpack_require__.p + "assets/5-d1642.jpg";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "94b38e1a78b484e27597c704487e0cc2.jpg";
+module.exports = __webpack_require__.p + "assets/gg-94b38.jpg";
 
 /***/ }),
 /* 10 */
