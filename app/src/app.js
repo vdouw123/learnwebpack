@@ -1,12 +1,10 @@
-/**
- * Created by sf on 2017/3/3.
- */
-
-import layar from './components/layer/layer.js';
+import Layer from './components/layer/layer.js';
 import './style/common.css';
 
 const App = function () {
-    console.log('app.js');
+    var dom = document.getElementById("app");
+    var layer = new Layer();
+    dom.innerHTML = layer.tpl;
 }
 
 new App();

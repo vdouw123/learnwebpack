@@ -114,6 +114,13 @@ babel的作用是将es6转换成es5
 安装sass
 （npm install sass-loader --save-dev）
 
+安装html-loader
+（npm install html-loader --save-dev）
+
+html loader module for webpack
+http://webpack.github.io/docs/list-of-loaders.html#templating
+https://github.com/webpack-contrib/html-loader
+
 
 
 

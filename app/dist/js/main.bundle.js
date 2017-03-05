@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -385,21 +385,22 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-__webpack_require__(7);
+__webpack_require__(8);
+
+var _layer = __webpack_require__(7);
+
+var _layer2 = _interopRequireDefault(_layer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function layer() {
     return {
         name: 'layer',
-        tpl: tpl
+        tpl: _layer2.default
     };
-} /**
-   * Created by sf on 2017/3/4.
-   */
+}
 
 exports.default = layer;
-
-
-console.log("layer.js");
 
 /***/ }),
 /* 3 */
@@ -471,6 +472,12 @@ exports.push([module.i, ".flex-div {\r\n    display: flex;\r\n}", ""]);
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"layer\">\r\n    <div>this is layer</div>\r\n</div>";
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -496,7 +503,7 @@ if(false) {
 }
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -510,12 +517,10 @@ __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
- * Created by sf on 2017/3/3.
- */
-
 var App = function App() {
-  console.log('app.js');
+    var dom = document.getElementById("app");
+    var layer = new _layer2.default();
+    dom.innerHTML = layer.tpl;
 };
 
 new App();
