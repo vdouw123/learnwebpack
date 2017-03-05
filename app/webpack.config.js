@@ -48,20 +48,27 @@ module.exports = {
                 test: /\.tpl$/,
                 loader: 'ejs-loader'
             },
+            // {
+            //     test: /\.(png|jpg|gif|svg)$/i,
+            //     loader: 'file-loader',
+            //     query: {
+            //         name: 'assets/[name]-[hash:5].[ext]'
+            //     }
+            // },
             {
                 test: /\.(png|jpg|gif|svg)$/i,
-                loader: 'file-loader',
+                loader: 'url-loader',
                 query: {
-                    name: 'assets/[name]-[hash:5].[ext]'
+                    limit: 80000,
+                    name: 'assets2/[name]-[hash:5].[ext]'
                 }
-
             }
         ]
     },
 
     plugins: [
         new htmlWebpackPlugin({
-            filename: 'index.html',
+            filename: 'index2.html',
             template: 'index.html',
             inject: 'body'
         })

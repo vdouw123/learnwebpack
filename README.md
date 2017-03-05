@@ -136,6 +136,8 @@ https://github.com/webpack-contrib/html-loader
 安装url-loader
 （npm install url-loader --save-dev）
 
+将小于80K的图片打包成base64 query: {limit: 80000,name: 'assets2/[name]-[hash:5].[ext]'}
+
 
 
 
