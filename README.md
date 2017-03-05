@@ -133,6 +133,11 @@ https://github.com/webpack-contrib/html-loader
 
 设置打包后图片的路径和名字：query: {name: 'assets/[name]-[hash:5].[ext]'}
 
+安装url-loader
+（npm install url-loader --save-dev）
+
+
+
 
 
 
