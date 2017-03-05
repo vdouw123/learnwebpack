@@ -102,7 +102,14 @@ babel的作用是将es6转换成es5
 安装postcss-loader
 （npm install postcss-loader --save-dve）
 
-npm install autoprefixer --save-dev
+安装postcss-loader的插件autoprefixer
+（npm install autoprefixer --save-dev）
+
+安装less-loader
+（npm i less-loder --save-dev）
+
+安装less
+（npm install less --save-dev）
 
 
 

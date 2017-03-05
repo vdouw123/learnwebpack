@@ -31,6 +31,10 @@ module.exports = {
                     'css-loader?importLoaders=1',
                     'postcss-loader'
                 ]
+            },
+            {
+                test: /\.less$/,
+                loader: 'style-loader!css-loader!postcss-loader!less-loader'
             }
         ]
     },
