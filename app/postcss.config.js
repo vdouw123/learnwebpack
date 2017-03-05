@@ -2,18 +2,20 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css/,
+                test: /\.css$/,
                 use: [
                     {
                         loader: 'postcss-loader',
                         options: {
                             plugins: function () {
                                 return [
-                                    require('precss'),
-                                    require('autoprefixer')
+                                    require('autoprefixer')({
+                                        broswers: ['last 5 versions']
+                                    })
                                 ];
                             }
                         }
+
                     }
                 ]
             }

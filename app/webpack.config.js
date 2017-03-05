@@ -34,9 +34,7 @@ module.exports = {
             }
         ]
     },
-    // postcss:[
-    //     require('autoprefixer')
-    // ],
+
     plugins: [
         new htmlWebpackPlugin({
             filename: 'index.html',
