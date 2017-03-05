@@ -1,8 +1,5 @@
-# 学学webpack
+# 大家一起来学webpack
 follow imooc to learn webpack
-
-视频教程地址：
-http://www.imooc.com/learn/802
 
 新建文件夹（mkdir webpack-test）
 
@@ -140,6 +137,9 @@ https://github.com/webpack-contrib/html-loader
 
 安装img-loader
 （npm install img-loader --save-dev）
+
+视频教程地址：
+http://www.imooc.com/learn/802
 
 
 
