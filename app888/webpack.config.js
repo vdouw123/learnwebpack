@@ -8,7 +8,7 @@ var path = require('path');
 module.exports = {
     entry: './src/app.js',
     output: {
-        path: './dist/',
+        path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].bundle.js'
     },
     module: {
@@ -48,10 +48,25 @@ module.exports = {
                 test: /\.tpl$/,
                 loader: 'ejs-loader'
             },
+            // {
+            //     test: /\.(png|jpg|gif|svg)$/i,
+            //     loader: 'file-loader',
+            //     query: {
+            //         name: 'assets/[name]-[hash:5].[ext]'
+            //     }
+            // },
+            // {
+            //     test: /\.(png|jpg|gif|svg)$/i,
+            //     loader: 'url-loader',
+            //     query: {
+            //         limit: 80000,
+            //         name: 'assets2/[name]-[hash:5].[ext]'
+            //     }
+            // },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loaders: [
-                    'url-loader?limit=50000&name=assets/[name]-[hash:5].[ext]',
+                    'url-loader?limit=80000&name=assets/[name]-[hash:5].[ext]',
                     'img-loader'
                 ]
             }
@@ -62,12 +77,7 @@ module.exports = {
         new htmlWebpackPlugin({
             filename: 'index.html',
             template: 'index.html',
-            inject: 'body',
-            minify: {
-                removeComments: true,   //删除注释
-                collapseWhitespace: true,  //删除空格
-                //https://github.com/kangax/html-minifier#options-quick-reference
-            }
+            inject: 'body'
         })
     ]
 };

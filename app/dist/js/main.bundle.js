@@ -527,7 +527,7 @@ if(false) {
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets2/5-d1642.jpg";
+module.exports = __webpack_require__.p + "assets/5-d1642.jpg";
 
 /***/ }),
 /* 10 */

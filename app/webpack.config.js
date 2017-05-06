@@ -8,8 +8,8 @@ var path = require('path');
 module.exports = {
     entry: './src/app.js',
     output: {
-        path: './dist/3',
-        filename: 'js/[name]3.bundle.js'
+        path: './dist',
+        filename: 'js/[name].bundle.js'
     },
     module: {
         loaders: [
@@ -66,7 +66,7 @@ module.exports = {
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loaders: [
-                    'url-loader?limit=80000&name=assets3/[name]-[hash:5].[ext]',
+                    'url-loader?limit=80000&name=assets/[name]-[hash:5].[ext]',
                     'img-loader'
                 ]
             }
@@ -75,7 +75,7 @@ module.exports = {
 
     plugins: [
         new htmlWebpackPlugin({
-            filename: 'index3.html',
+            filename: 'index.html',
             template: 'index.html',
             inject: 'body'
         })
