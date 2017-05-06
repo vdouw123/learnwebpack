@@ -8,67 +8,29 @@ var path = require('path');
 module.exports = {
     entry: './src/app.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path:path.resolve(__dirname, 'dist'),
         filename: 'js/[name].bundle.js'
     },
+
     module: {
         loaders: [
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                //exclude: './node_modules/',     //优化打包速度之排出的文件夹
-                //include:'./src/',               //优化打包速度之引用的文件夹
                 include: path.resolve(__dirname, 'src'),
                 exclude: path.resolve(__dirname, 'node_modules'),       //绝对路径
                 query: {
                     presets: ['latest']
                 }
             },
-            {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader?importLoaders=1',
-                    'postcss-loader'
-                ]
-            },
-            {
-                test: /\.less$/,
-                loader: 'style-loader!css-loader!postcss-loader!less-loader'
-            },
-            {
-                test: /\.scss$/,
-                loader: 'style-loader!css-loader!postcss-loader!sass-loader'
-            },
-            {
-                test: /\.html$/,
-                loader: 'html-loader'
-            },
-            {
-                test: /\.tpl$/,
-                loader: 'ejs-loader'
-            },
-            // {
-            //     test: /\.(png|jpg|gif|svg)$/i,
-            //     loader: 'file-loader',
-            //     query: {
-            //         name: 'assets/[name]-[hash:5].[ext]'
-            //     }
-            // },
-            // {
-            //     test: /\.(png|jpg|gif|svg)$/i,
-            //     loader: 'url-loader',
-            //     query: {
-            //         limit: 80000,
-            //         name: 'assets2/[name]-[hash:5].[ext]'
-            //     }
-            // },
+            {test: /\.css$/, use: ['style-loader', 'css-loader?importLoaders=1', 'postcss-loader']},
+            {test: /\.less$/, loader: 'style-loader!css-loader!postcss-loader!less-loader'},
+            {test: /\.scss$/, loader: 'style-loader!css-loader!postcss-loader!sass-loader'},
+            {test: /\.html$/, loader: 'html-loader'},
+            {test: /\.tpl$/, loader: 'ejs-loader'},
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'url-loader?limit=80000&name=assets/[name]-[hash:5].[ext]',
-                    'img-loader'
-                ]
+                loaders: ['url-loader?limit=80000&name=assets/[name]-[hash:5].[ext]', 'img-loader']
             }
         ]
     },

@@ -505,14 +505,12 @@ obj || (obj = {});
 var __t, __p = '', __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 with (obj) {
-__p += '<div class="layer">\r\n    <div>\r\n        <span>this is ' +
+__p += '<div class="layer">\r\n    <div class="flex">\r\n        <span>this is ' +
 ((__t = ( name )) == null ? '' : __t) +
 ' layer</span>\r\n        <img src="' +
 ((__t = ( __webpack_require__(10) )) == null ? '' : __t) +
 '"/>\r\n    </div>\r\n    ';
- for (var i=0; i
-    <arr.length
-    ; i++) { ;
+ for (var i=0; i<arr.length ; i++) { ;
 __p += '\r\n    ' +
 ((__t = ( arr[i] )) == null ? '' : __t) +
 '\r\n    ';
