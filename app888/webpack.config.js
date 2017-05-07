@@ -8,7 +8,7 @@ var path = require('path');
 module.exports = {
     entry: './src/app.js',
     output: {
-        path:path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].bundle.js'
     },
 
@@ -39,7 +39,11 @@ module.exports = {
         new htmlWebpackPlugin({
             filename: 'index.html',
             template: 'index.html',
-            inject: 'body'
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
         })
     ]
 };
