@@ -4,6 +4,7 @@
 
 var htmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
     entry: './src/app.js',
@@ -44,6 +45,13 @@ module.exports = {
                 removeComments: true,
                 collapseWhitespace: true
             }
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            minimize: true,
+            compress: {warnings: false},
+            output: {comments: false},
+            minChunks: Infinity
         })
     ]
 };
