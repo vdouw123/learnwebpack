@@ -1,0 +1,25 @@
+@width400: 400px;
+
+.layer {
+    width: @width400;
+    height: 400px;
+    background: url('../../assets/gg.jpg') no-repeat;
+    background-size: 600px 600px;
+    padding: 100px;
+    div {
+        width: @width400;
+        height: 400px;
+        position: relative;
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: @width400;
+            height: 400px;
+            transform: scale(1.1,1.1);
+        }
+    }
+    .flex {
+        display: flex;
+    }
+}
