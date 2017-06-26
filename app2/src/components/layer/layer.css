@@ -1,0 +1,26 @@
+.layer {
+  width: 400px;
+  height: 400px;
+  background: url('../../assets/gg.jpg') no-repeat;
+  background-size: 600px 600px;
+  padding: 100px;
+}
+.layer div {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.layer div img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 400px;
+  transition: all 0.3s;
+}
+.layer div img:hover {
+  transform: scale(1.1, 1.1);
+}
+.layer .flex {
+  display: flex;
+}

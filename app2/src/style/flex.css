@@ -1,0 +1,6 @@
+.flex-div {
+    display: flex;
+    height: 50px;
+    background: red;
+    width: 600px;
+}
