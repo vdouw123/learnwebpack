@@ -30,22 +30,6 @@ module.exports = {
             },
             {test: /\.css$/, use: ['style-loader', 'css-loader?importLoaders=1', 'postcss-loader']},
             {test: /\.less$/, loader: 'style-loader!css-loader!postcss-loader!less-loader'},
-            // {
-            //     test: /\.less$/,
-            //     exclude: /node_modules/,
-            //     loader: ExtractTextPlugin.extract({
-            //         fallback: 'style-loader',
-            //         use: 'css-loader?modules&localIdentName=[local]-[hash:base64:8]!resolve-url-loader!postcss-loader!less-loader'
-            //     })
-            // },
-            // {
-            //     test: /\.css$/,
-            //     exclude: /node_modules/,
-            //     loader: ExtractTextPlugin.extract({
-            //         fallback: 'style-loader',
-            //         use: 'css-loadermodules&localIdentName=[local]-[hash:base64:8]!resolve-url-loader!postcss-loader'
-            //     })
-            // },
             {test: /\.scss$/, loader: 'style-loader!css-loader!postcss-loader!sass-loader'},
             {test: /\.html$/, loader: 'html-loader'},
             {test: /\.tpl$/, loader: 'ejs-loader'},
